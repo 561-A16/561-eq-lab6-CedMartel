@@ -1,3 +1,8 @@
-cd /script
+#!bin/bash
+cd src/appweb
 dotnet restore
-dotnet run
+
+cd ..
+cd appweb.unittests
+dotnet restore
+dotnet test
